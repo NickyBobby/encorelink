@@ -47,7 +47,7 @@ class CreateEvent extends React.Component {
                   onChange={this.handleDateChange}
                   placeholder="date"
                   required
-                  />
+                />
               </div>
             </div>
             <div className="row">
