@@ -33,17 +33,17 @@ class CreateEvent extends React.Component {
 
   render() {
     return (
-      <div className="row align-center">
-        <div className="large-8 columns">
+      <div className="row">
+        <div className="small-12 columns">
           <h1>Schedule Performance</h1>
           <h4 className="subheader">Fill form below to set up a performance time slot</h4>
           <form className="form-create-event" onSubmit={this.handleFormSubmit}>
             <div className="row">
-              <div className="large-2 columns">
-                <label>Date</label>
+              <div className="small-3 medium-2 columns">
+                <label>Start Date/Time</label>
               </div>
-              <div className="large-10 columns">
-                <input type="date"
+              <div className="small-9 medium-10 columns">
+                <input type="datetime-local"
                   onChange={this.handleDateChange}
                   placeholder="date"
                   required
@@ -51,34 +51,28 @@ class CreateEvent extends React.Component {
               </div>
             </div>
             <div className="row">
-              <div className="large-2 columns">
-                <label>Time</label>
+              <div className="small-3 medium-2 columns">
+                <label>End Date Time</label>
               </div>
-              <div className="large-10 columns">
-                <div className="row">
-                  <div className="large-5 columns">
-                    <input type="time" placeholder="9:00 AM" />
-                  </div>
-                  <div className="large-2 columns centered">to</div>
-                  <div className="large-5 columns">
-                    <input type="time" placeholder="10:00 AM" />
-                  </div>
-                </div>
+              <div className="small-9 medium-10 columns">
+                <input type="datetime-local"
+                  required
+                />
               </div>
             </div>
             <div className="row">
-              <div className="large-2 columns">
-                <label>Additional Notes</label>
+              <div className="small-3 medium-2 columns">
+                <label>Notes</label>
               </div>
-              <div className="large-10 columns">
+              <div className="small-9 medium-10 columns">
                 <textarea placeholder="Notes" />
               </div>
             </div>
             <div className="row">
-              <div className="large-2 columns">
+              <div className="small-3 medium-2 columns">
                 <label>Location</label>
               </div>
-              <div className="large-10 columns">
+              <div className="small-9 medium-10 columns">
                 <input type="text"
                   onChange={this.handleNameChange}
                   placeholder="Location"
@@ -89,9 +83,9 @@ class CreateEvent extends React.Component {
             </div>
 
             <div className="row">
-              <div className="large-2 columns" />
-              <div className="large-10 columns">
-                <input className="button" type="submit" value="Schedule Performance Time Slot" />
+              <div className="small-3 medium-2 columns" />
+              <div className="small-9 medium-10 columns">
+                <input className="button" type="submit" value="Schedule" />
               </div>
             </div>
           </form>
