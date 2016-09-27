@@ -62,14 +62,6 @@ class CreateEvent extends React.Component {
             </div>
             <div className="row">
               <div className="small-3 medium-2 columns">
-                <label>Notes</label>
-              </div>
-              <div className="small-9 medium-10 columns">
-                <textarea placeholder="Notes" />
-              </div>
-            </div>
-            <div className="row">
-              <div className="small-3 medium-2 columns">
                 <label>Location</label>
               </div>
               <div className="small-9 medium-10 columns">
@@ -80,8 +72,14 @@ class CreateEvent extends React.Component {
                   autoFocus
                 />
               </div>
+            </div><div className="row">
+              <div className="small-3 medium-2 columns">
+                <label>Notes</label>
+              </div>
+              <div className="small-9 medium-10 columns">
+                <textarea placeholder="Notes" />
+              </div>
             </div>
-
             <div className="row">
               <div className="small-3 medium-2 columns" />
               <div className="small-9 medium-10 columns">
