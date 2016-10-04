@@ -7,12 +7,14 @@ import ViewContainer from './containers/ViewContainer';
 import CreateEventContainer from './containers/CreateEventContainer';
 import VolunteerViewEvents from './containers/VolunteerViewEventsContainer';
 import Terms from './components/Terms';
+import OrganizerProfile from './components/OrganizerProfile';
 
 const routes = (
   <Route path="/" component={App}>
     <IndexRoute component={Landing} />
     <Route path="/login" component={LoginContainer} />
     <Route path="/createEvent" component={CreateEventContainer} />
+    <Route path="/organizerProfile" component={OrganizerProfile} />
     <Route path="/volunteerViewEvents" component={VolunteerViewEvents} />
     <Route path="/terms" component={Terms} />
     <Route path="/home" component={ViewContainer}>
